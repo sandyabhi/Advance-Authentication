@@ -6,13 +6,13 @@ const Loader = () => {
   return (
     <View
       style={{
-        backgroundColor: "#fff",
+        backgroundColor: "#4ed4b3",
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
       }}
     >
-      <ActivityIndicator animating={true} size={100} color="#900" />
+      <ActivityIndicator animating={true} size={100} color="#51b0d7" />
     </View>
   );
 };

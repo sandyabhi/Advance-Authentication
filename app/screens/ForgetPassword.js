@@ -26,7 +26,7 @@ const ForgetPassword = ({ navigation }) => {
     <View
       style={{
         flex: 1,
-        backgroundColor: "#fff",
+        backgroundColor: "#F5F5F5",
         alignItems: "center",
         justifyContent: "center",
       }}
@@ -44,11 +44,10 @@ const ForgetPassword = ({ navigation }) => {
       <Button
         style={Styles.btn}
         onPress={forgetHandler}
-        color="#fff"
         disabled={loading}
         loading={loading}
       >
-        Send Email
+        <Text style={{ color: "#fff" }}>Send Email</Text>
       </Button>
     </View>
   );
@@ -67,7 +66,8 @@ const Styles = StyleSheet.create({
   },
 
   btn: {
-    backgroundColor: "#900",
+    backgroundColor: "#51b0d7",
+    color: "#fff",
     padding: 5,
     width: "70%",
   },

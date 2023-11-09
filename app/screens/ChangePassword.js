@@ -19,7 +19,7 @@ const ChangePassword = ({ navigation }) => {
     <View
       style={{
         flex: 1,
-        backgroundColor: "#fff",
+        backgroundColor: "#F5F5F5",
         alignItems: "center",
         justifyContent: "center",
       }}
@@ -43,7 +43,11 @@ const ChangePassword = ({ navigation }) => {
         />
       </View>
 
-      <Button style={Styles.btn} onPress={changePasswordHandler} color="#fff">
+      <Button
+        style={Styles.btn}
+        onPress={changePasswordHandler}
+        textColor="#fff"
+      >
         Change
       </Button>
     </View>
@@ -65,7 +69,7 @@ const Styles = StyleSheet.create({
   },
 
   btn: {
-    backgroundColor: "#900",
+    backgroundColor: "#51b0d7",
     padding: 5,
     width: "70%",
   },

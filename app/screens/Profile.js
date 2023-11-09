@@ -60,7 +60,7 @@ const Profile = ({ navigation, route }) => {
     <View
       style={{
         flex: 1,
-        backgroundColor: "#fff",
+        backgroundColor: "#F5F5F5",
         alignItems: "center",
         justifyContent: "center",
       }}
@@ -68,10 +68,10 @@ const Profile = ({ navigation, route }) => {
       <Avatar.Image
         size={100}
         source={{ uri: avatar ? avatar : null }}
-        style={{ backgroundColor: "#900" }}
+        style={{ backgroundColor: "#51b0d7" }}
       />
       <TouchableOpacity onPress={handleImage}>
-        <Text style={{ color: "#900", margin: 20 }}>Change Photo</Text>
+        <Text style={{ color: "#51b0d7", margin: 20 }}>Change Photo</Text>
       </TouchableOpacity>
 
       <View style={{ width: "70%" }}>
@@ -88,18 +88,23 @@ const Profile = ({ navigation, route }) => {
       </Button>
 
       <Button
-        color="rgb(50,50,50)"
+        textColor="#4ed4b3"
         onPress={() => navigation.navigate("ChangePassword")}
       >
         Change Password
       </Button>
 
-      <Button color="rgb(50,50,50)" onPress={logoutHandler}>
+      <Button textColor="#4ed4b3" onPress={logoutHandler}>
         Logout
       </Button>
 
       {user.verified ? null : (
-        <Button onPress={() => navigation.navigate("Verify")}>Verify</Button>
+        <Button
+          textColor="#4ed4b3"
+          onPress={() => navigation.navigate("Verify")}
+        >
+          Verify
+        </Button>
       )}
     </View>
   );
@@ -119,7 +124,7 @@ const Styles = StyleSheet.create({
     fontSize: 15,
   },
   btn: {
-    backgroundColor: "#900",
+    backgroundColor: "#51b0d7",
     padding: 5,
     width: "70%",
   },

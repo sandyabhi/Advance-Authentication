@@ -33,7 +33,7 @@ const Login = ({ navigation }) => {
     <View
       style={{
         flex: 1,
-        backgroundColor: "#fff",
+        backgroundColor: "#F5F5F5",
         alignItems: "center",
         justifyContent: "center",
       }}
@@ -60,8 +60,9 @@ const Login = ({ navigation }) => {
         disabled={!email || !password}
         style={Styles.btn}
         onPress={loginHandler}
+        textColor="#fff"
       >
-        <Text style={{ color: "#fff" }}>Login</Text>
+        Login
       </Button>
       <Text
         style={{
@@ -73,7 +74,7 @@ const Login = ({ navigation }) => {
       <TouchableOpacity onPress={() => navigation.navigate("Register")}>
         <Text
           style={{
-            color: "#900",
+            color: "#4ed4b3",
             height: 30,
             margin: 20,
           }}
@@ -82,7 +83,15 @@ const Login = ({ navigation }) => {
         </Text>
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate("ForgetPassword")}>
-        <Text> Forget Password </Text>
+        <Text
+          style={{
+            color: "#4ed4b3",
+            height: 30,
+            margin: 20,
+          }}
+        >
+          Forget Password
+        </Text>
       </TouchableOpacity>
     </View>
   );
@@ -103,7 +112,7 @@ const Styles = StyleSheet.create({
   },
 
   btn: {
-    backgroundColor: "#900",
+    backgroundColor: "#51b0d7",
     padding: 5,
     width: "70%",
   },

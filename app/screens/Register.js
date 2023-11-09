@@ -51,7 +51,7 @@ const Register = ({ navigation, route }) => {
     <View
       style={{
         flex: 1,
-        backgroundColor: "#fff",
+        backgroundColor: "#F5F5F5",
         alignItems: "center",
         justifyContent: "center",
       }}
@@ -59,10 +59,10 @@ const Register = ({ navigation, route }) => {
       <Avatar.Image
         size={100}
         source={{ uri: avatar ? avatar : null }}
-        style={{ backgroundColor: "#900" }}
+        style={{ backgroundColor: "#51b0d7" }}
       />
       <TouchableOpacity onPress={handleImage}>
-        <Text style={{ color: "#900" }}>Change Photo</Text>
+        <Text style={{ color: "#51b0d7" }}>Change Photo</Text>
       </TouchableOpacity>
 
       <View style={{ width: "70%" }}>
@@ -97,7 +97,7 @@ const Register = ({ navigation, route }) => {
       <TouchableOpacity onPress={() => navigation.navigate("Login")}>
         <Text
           style={{
-            color: "#900",
+            color: "#4ed4b3",
             height: 30,
             margin: 20,
           }}
@@ -124,7 +124,7 @@ const Styles = StyleSheet.create({
   },
 
   btn: {
-    backgroundColor: "#900",
+    backgroundColor: "#51b0d7",
     padding: 5,
     width: "70%",
   },

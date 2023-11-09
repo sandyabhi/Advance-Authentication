@@ -17,7 +17,7 @@ const Verify = () => {
     <View
       style={{
         flex: 1,
-        backgroundColor: "#fff",
+        backgroundColor: "#F5F5F5",
         alignItems: "center",
         justifyContent: "center",
       }}
@@ -33,7 +33,7 @@ const Verify = () => {
         />
       </View>
 
-      <Button style={Styles.btn} color="#fff" onPress={verifyHandler}>
+      <Button style={Styles.btn} textColor="#fff" onPress={verifyHandler}>
         Verify
       </Button>
     </View>
@@ -55,7 +55,7 @@ const Styles = StyleSheet.create({
   },
 
   btn: {
-    backgroundColor: "#900",
+    backgroundColor: "#51b0d7",
     padding: 5,
     width: "70%",
   },

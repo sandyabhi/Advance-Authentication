@@ -52,9 +52,8 @@ const Home = ({ navigation }) => {
     <>
       <View
         style={{
-          backgroundColor: "#fff",
+          backgroundColor: "#F5F5F5",
           flex: 1,
-          paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
         }}
       >
         <ScrollView>
@@ -73,14 +72,18 @@ const Home = ({ navigation }) => {
               ))}
 
             <TouchableOpacity style={styles.addBtn} onPress={hideDialog}>
-              <Icon name="add-to-list" size={20} color="#900" />
+              <Icon name="add-to-list" size={20} color="#51b0d7" />
             </TouchableOpacity>
           </SafeAreaView>
         </ScrollView>
       </View>
 
-      <Dialog visible={openDialog} onDismiss={hideDialog}>
-        <Dialog.Title>ADD A TASK</Dialog.Title>
+      <Dialog
+        style={{ backgroundColor: "#F5F5F5" }}
+        visible={openDialog}
+        onDismiss={hideDialog}
+      >
+        <Dialog.Title>ADD NOTE</Dialog.Title>
         <Dialog.Content>
           <TextInput
             style={styles.input}
@@ -101,7 +104,7 @@ const Home = ({ navigation }) => {
             </TouchableOpacity>
             <Button
               onPress={addTaskHandler}
-              buttonColor="#900"
+              textColor="#51b0d7"
               disabled={!title || !description || loading}
             >
               ADD
@@ -119,10 +122,10 @@ const styles = StyleSheet.create({
   heading: {
     fontSize: 28,
     textAlign: "center",
-    marginTop: 25,
+    paddingTop: 30,
     marginBottom: 20,
     color: "#fff",
-    backgroundColor: "#474747",
+    backgroundColor: "#575757",
   },
   addBtn: {
     backgroundColor: "#fff",

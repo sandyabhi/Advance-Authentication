@@ -27,17 +27,19 @@ const Task = ({ title, description, status, taskId }) => {
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "space-evenly",
+        backgroundColor: "#fff",
+        margin: 5,
       }}
     >
       <View style={{ width: "70%" }}>
-        <Text style={{ fontSize: 20, marginVertical: 7, color: "#900" }}>
+        <Text style={{ fontSize: 20, marginVertical: 7, color: "#4ed4b3" }}>
           {title}
         </Text>
         <Text style={{ color: "#4a4a4a" }}>{description}</Text>
       </View>
       <Checkbox
         status={completed ? "checked" : "unchecked"}
-        color="#474747"
+        color="#51b0d7"
         onPress={handleCheckbox}
       />
       <Icon
@@ -45,7 +47,7 @@ const Task = ({ title, description, status, taskId }) => {
         color="#fff"
         size={20}
         style={{
-          backgroundColor: "#900",
+          backgroundColor: "#FF5349",
           padding: 10,
           borderRadius: 100,
         }}

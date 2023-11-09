@@ -31,9 +31,11 @@ const Camera = ({ navigation, route }) => {
       quality: 1,
     });
 
+    const uri = data.assets[0].uri;
+
     if (route.params.updateProfile)
-      return navigation.navigate("Profile", { image: data.uri });
-    else return navigation.navigate("Register", { image: data.uri });
+      return navigation.navigate("Profile", { image: uri });
+    else return navigation.navigate("Register", { image: uri });
   };
 
   const clickPicture = async () => {
